@@ -10,14 +10,14 @@ public class Ex11 {
 		
 		int sum = 0; // 초기화
 		
-		if(num % 2 == 0) {
-			for(int i = 2; i<=num; i=i+2) { // i를 2로 초기화, num이하로 반복, i(4)=i(2)+2
+		if(num % 2 == 0) {// 짝수일때
+			for(int i = 2; i<=num; i=i+2) { // i를 2로 초기화, num이하로 반복, i=i(2)+2 i가 2이여서 짝수로 계산
 				sum = sum+i; // sum(4) = sum(0)+i(4)
 			}
 		
-		}else {
-			for(int i = 1; i<=num; i=i+2) { // i를 1로 초기화, num이하로 반복, i(3)=i(1)+2
-				sum = sum+i; // sum(3) = sum(0)+i(3)
+		}else {// 홀수일때
+			for(int i = 1; i<=num; i=i+2) { // i를 1로 초기화, num이하로 반복, i=i(1)+2 i가 1이여서 홀수로 계산
+				sum = sum+i; // 
 			}
 		}
 		
